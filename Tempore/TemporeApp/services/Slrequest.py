@@ -1,5 +1,6 @@
 import requests
 
+
 URL = f"http://api.sl.se/api2/TravelplannerV3/trip.json?key=&lang=sv&destExtId=1319\
     &searchForArrival=1"
 #search_for_arrival: bool schedule_end: str
