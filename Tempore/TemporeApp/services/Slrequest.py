@@ -1,6 +1,6 @@
 import requests
 
-URL = f"http://api.sl.se/api2/TravelplannerV3/trip.json?key=&lang=sv&destId=1319\
+URL = f"http://api.sl.se/api2/TravelplannerV3/trip.json?key=aa704a5c893c433f9c0a38c00371a300&lang=sv&destId=1319\
     &searchForArrival=1"
 #search_for_arrival: bool schedule_end: str
 # #arrival_true_false = _check_if_search_for_arrival_is_false_or_true(search_for_arrival)
@@ -35,14 +35,3 @@ def format_leg(leg):
         'name': leg['name'],
         'type': leg['type']
     }
-def _start_end_time_switch_(start, end, arrival):
-    if arrival is True:
-        return start
-    else:
-        return end
-
-def _check_if_search_for_arrival_is_false_or_true(arrival):
-    if arrival is True:
-        return 1
-    else:
-        return 0

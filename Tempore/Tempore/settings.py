@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+MONGODB_URI = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/')
 # Application definition
 
 INSTALLED_APPS = [
