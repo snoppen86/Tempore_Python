@@ -2,3 +2,7 @@
 *.lock
 
 *.pyc
+
+requirements\.txt
+
+*.xml
