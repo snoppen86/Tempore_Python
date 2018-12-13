@@ -17,9 +17,11 @@ def dose_user_exist_in_db(person):
 
 
 def add_user_if_it_dosent_exist_in_db(person):
-    log.debug("new user created")
-    user_col.insert_one(person)
-    return False
+    if user_col.find_one({"address": person['address'],"scheduleStart":person['scheduleStart']}):
+        log.debug("new user created")
+        user_col.insert_one(person)
+        return False
+    log.warning("Bad Arguments", exc_info=True)
 
 
 def getting_user_info_by_email(person):
