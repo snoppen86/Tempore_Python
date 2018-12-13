@@ -1,7 +1,8 @@
 import requests
 import json
 
-URL = "https://geocoder.api.here.com/6.2/geocode.json?app_id=&app_code="
+URL = "https://geocoder.api.here.com/6.2/geocode.json?app_id=&app_code=\
+"
 #Here maps på google
 
 def get_coordinates_for_location(location: str):

@@ -15,3 +15,4 @@ def get_person_coordinates_from_location(request):
     except:  # NOQA
         log.warning("Failed to get location", exc_info=True)
     return Response(status=404)
+

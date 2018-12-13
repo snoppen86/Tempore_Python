@@ -26,7 +26,8 @@ SECRET_KEY = '@r+)3e$)f!3b0@v-momalnu1f5)(w28vwwa6u7nmyc!)r+ug^v'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '10.138.14.37'
+    '10.138.14.37',
+    '127.0.0.1'
 ]
 
 MONGODB_URI = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/')
