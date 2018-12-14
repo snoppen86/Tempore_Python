@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from rest_framework.urlpatterns import format_suffix_patterns
 from TemporeApp import views
+from rest_framework.urlpatterns import format_suffix_patterns
 
-urlpatterns = [
+urlpatterns = {
     path('admin/', admin.site.urls),
-    path('person/', views.get_person_coordinates_from_location),
+    path('person/', views.get_person_coordinates_from_location)
 
-]
+}

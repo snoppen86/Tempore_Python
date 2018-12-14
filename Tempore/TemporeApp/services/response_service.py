@@ -1,8 +1,6 @@
-from TemporeApp import views
-from rest_framework.response import Response
 from .location import get_coordinates_for_location
 from .Slrequest import get_trip_from_coordinates
-from .database_inserter import dose_user_exist_in_db,add_user_if_it_dosent_exist_in_db,getting_user_info_by_email
+from .database_inserter import dose_user_exist_in_db, add_user_if_it_dosent_exist_in_db, getting_user_info_by_email
 import logging
 
 log = logging.getLogger(__file__)

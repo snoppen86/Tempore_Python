@@ -1,8 +1,8 @@
 import requests
 
 
-URL = f"http://api.sl.se/api2/TravelplannerV3/trip.json?key=&lang=sv&destExtId=1319\
-    &searchForArrival=1"
+URL = f"http://api.sl.se/api2/TravelplannerV3/trip.json?key=aa704a5c893c433f9c0a38c00371a300\
+&lang=sv&destExtId=1319&searchForArrival=1"
 #search_for_arrival: bool schedule_end: str
 # #arrival_true_false = _check_if_search_for_arrival_is_false_or_true(search_for_arrival)
 # #schdule_switcher = _start_end_time_switch_(schedule_start, schedule_end, search_for_arrival)
