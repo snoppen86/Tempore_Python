@@ -1,6 +1,7 @@
 from .location import get_coordinates_for_location
 from .Slrequest import get_trip_from_coordinates
 from .database_inserter import dose_user_exist_in_db, add_user_if_it_dosent_exist_in_db, getting_user_info_by_email
+from TemporeApp import views
 import logging
 
 log = logging.getLogger(__file__)
@@ -9,6 +10,12 @@ log = logging.getLogger(__file__)
 def main_response_handler(data):
     log.info(f"{data}")
     person = data['person']
+    travel_response = _travel_response_handler(person)
+    return travel_response
+
+
+def _travel_response_handler(person):
+
     if dose_user_exist_in_db(person):
         travel_plan = getting_user_info_by_email(person)
         return {'Travel plan': travel_plan}
