@@ -4,5 +4,33 @@
 {% endblock %}
 
 {% block body %}
-<h1>Hello</h1>
+    {% if user.is_authenticated %}
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a href="{%url 'home'%}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="{%url 'home'%}">Journey</a>
+            </li>
+            <li class="nav-item">
+                <a href="{%url 'home'%}">Logout</a>
+            </li>
+        </ul>
+<div class="jumbotron">
+        <h2>Hi {{user.username}}</h2>
+</div>
+    <button type="button"><a href="{%url 'logout'%}"> Logout</a> </button>
+    {% else %}
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="{% url 'login'%}">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'signup'%}">Signup</a>
+            </li>
+        </ul>
+        <center>
+            <p>You're not logged in</p>
+        </center>
+    {% endif %}
 {% endblock %}

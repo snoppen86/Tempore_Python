@@ -1,4 +1,5 @@
 import logging
+from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .services.response_service import main_response_handler
@@ -6,7 +7,7 @@ from .services.response_service import main_response_handler
 log = logging.getLogger(__file__)
 
 
-@api_view(['POST', 'GET'])
+@api_view(['POST'])
 def get_person_coordinates_from_location(request):
     try:
         data = request.data
@@ -17,3 +18,5 @@ def get_person_coordinates_from_location(request):
     return Response(status=404)
 
 
+def render_website(request):
+    return render(request, '/index.html')

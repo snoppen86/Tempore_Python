@@ -5,11 +5,11 @@
 {% endblock%}
 
 {% block body%}
-<form method="get">
+<h2>Login</h2>
+<form method="post">
     <div class="container">
             {% csrf_token %}
             {{ form.as_p}}
-
         <button type="submit" class="btn btn-primary">Login</button>
     </div>
 </form>

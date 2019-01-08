@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf8918f0-b431-441e-a911-dddcf6e2fcea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TemporeApp/static/staticPage/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TemporeApp/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TemporeApp/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TemporeApp/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TemporeApp/templates/registration/password_reset_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TemporeApp/update_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TemporeApp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tempore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tempore/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tempore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tempore/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemporeApp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemporeApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TemporeApp/services/Slrequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/services/Slrequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemporeApp/services/database_inserter.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/services/database_inserter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TemporeApp/services/response_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/services/response_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemporeApp/tests/db_testfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/tests/db_testfile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TemporeApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,64 +32,79 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TemporeApp/views.py">
+        <entry file="file://$PROJECT_DIR$/TemporeApp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="170">
+              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TemporeApp/services/response_service.py">
+        <entry file="file://$PROJECT_DIR$/TemporeApp/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            <state relative-caret-position="578">
+              <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TemporeApp/templates/registration/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TemporeApp/templates/registration/password_reset_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TemporeApp/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TemporeApp/services/database_inserter.py">
+        <entry file="file://$PROJECT_DIR$/TemporeApp/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TemporeApp/services/Slrequest.py">
+        <entry file="file://$PROJECT_DIR$/TemporeApp/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+            <state relative-caret-position="578">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TemporeApp/services/location.py">
+        <entry file="file://$PROJECT_DIR$/TemporeApp/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tempore/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+            <state relative-caret-position="102">
+              <caret line="6" column="86" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -84,15 +114,28 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>http</find>
+      <find>https</find>
+      <find>img</find>
+      <find>bg-</find>
+      <find>masthead</find>
+      <find>url(</find>
+      <find>demo-image</find>
+      <find>bg-signup</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Scottalm\Project_Tempore\Tempore_Python\Tempore\TemporeApp\templates</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -102,11 +145,8 @@
       <list>
         <option value="$PROJECT_DIR$/TemporeApp/admin.py" />
         <option value="$PROJECT_DIR$/TemporeApp/migrations/serializers.py" />
-        <option value="$PROJECT_DIR$/TemporeApp/models.py" />
         <option value="$PROJECT_DIR$/TemporeApp/tests/test_services.py" />
         <option value="$PROJECT_DIR$/TemporeApp/Slrequest.py" />
-        <option value="$PROJECT_DIR$/TemporeApp/forms.py" />
-        <option value="$PROJECT_DIR$/Tempore/urls.py" />
         <option value="$PROJECT_DIR$/TemporeApp/serializers.py" />
         <option value="$PROJECT_DIR$/TemporeApp/json" />
         <option value="$PROJECT_DIR$/TemporeApp/services/Schedule.py" />
@@ -114,17 +154,41 @@
         <option value="$PROJECT_DIR$/TemporeApp/HtmlTest.html" />
         <option value="$PROJECT_DIR$/TemporeApp/services/respone_service.py" />
         <option value="$PROJECT_DIR$/TemporeApp/services/location.py" />
-        <option value="$PROJECT_DIR$/TemporeApp/services/database_inserter.py" />
-        <option value="$PROJECT_DIR$/Tempore/settings.py" />
-        <option value="$PROJECT_DIR$/TemporeApp/views.py" />
+        <option value="$PROJECT_DIR$/TemporeApp/tests/db_testfile.py" />
         <option value="$PROJECT_DIR$/TemporeApp/services/response_service.py" />
+        <option value="$PROJECT_DIR$/TemporeApp/update_user.py" />
         <option value="$PROJECT_DIR$/TemporeApp/services/Slrequest.py" />
+        <option value="$PROJECT_DIR$/TemporeApp/services/database_inserter.py" />
+        <option value="$PROJECT_DIR$/TemporeApp/services/fetch_keys.py" />
+        <option value="$PROJECT_DIR$/TemporeApp/forms.py" />
+        <option value="$PROJECT_DIR$/TemporeApp/Templates/Pages/index.html" />
+        <option value="$PROJECT_DIR$/TemporeApp/static/Pages/style.css" />
+        <option value="$PROJECT_DIR$/TemporeApp/static/staticPage/style.css" />
+        <option value="$PROJECT_DIR$/TemporeApp/templates/Pages/index.html" />
+        <option value="$PROJECT_DIR$/TemporeApp/templates/Pages/login.html" />
+        <option value="$PROJECT_DIR$/Tempore/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/templates/signup.html" />
+        <option value="$PROJECT_DIR$/accounts/views.py" />
+        <option value="$PROJECT_DIR$/Tempore/settings.py" />
+        <option value="$PROJECT_DIR$/TemporeApp/templates/registration/password_reset_form.html" />
+        <option value="$PROJECT_DIR$/TemporeApp/templates/base.html" />
+        <option value="$PROJECT_DIR$/TemporeApp/templates/home.html" />
+        <option value="$PROJECT_DIR$/TemporeApp/views.py" />
+        <option value="$PROJECT_DIR$/TemporeApp/urls.py" />
+        <option value="$PROJECT_DIR$/TemporeApp/static/staticPage/scss/_masthead.scss" />
+        <option value="$PROJECT_DIR$/TemporeApp/static/staticPage/css/grayscale.css" />
+        <option value="$PROJECT_DIR$/TemporeApp/static/staticPage/scss/_signup.scss" />
+        <option value="$PROJECT_DIR$/TemporeApp/static/staticPage/css/grayscale.min.css" />
+        <option value="$PROJECT_DIR$/TemporeApp/templates/index.html" />
+        <option value="$PROJECT_DIR$/TemporeApp/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/TemporeApp/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="260" />
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="189" />
+    <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -146,6 +210,11 @@
             <path>
               <item name="Tempore" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tempore" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tempore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tempore" type="462c0819:PsiDirectoryNode" />
               <item name="Tempore" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -157,7 +226,27 @@
               <item name="Tempore" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tempore" type="462c0819:PsiDirectoryNode" />
               <item name="TemporeApp" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tempore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tempore" type="462c0819:PsiDirectoryNode" />
+              <item name="TemporeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="staticPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tempore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tempore" type="462c0819:PsiDirectoryNode" />
+              <item name="TemporeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tempore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tempore" type="462c0819:PsiDirectoryNode" />
+              <item name="TemporeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tempore" type="b2602c69:ProjectViewProjectNode" />
@@ -177,9 +266,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Scottalm\Project_Tempore\Tempore_Python\Tempore\TemporeApp\static\staticPage" />
+      <recent name="C:\Users\Scottalm\Project_Tempore\Tempore_Python\Tempore\TemporeApp\templates" />
+      <recent name="C:\Users\Scottalm\Project_Tempore\Tempore_Python\Tempore\TemporeApp\templates\registration" />
+      <recent name="C:\Users\Scottalm\Project_Tempore\Tempore_Python\Tempore\TemporeApp\Templates\Bootstrap" />
       <recent name="C:\Users\Scottalm\Project_Tempore\Tempore_Python\Tempore\TemporeApp\services" />
-      <recent name="C:\Users\Scottalm\Project_Tempore\Tempore_Python\Tempore\TemporeApp\tests" />
-      <recent name="C:\Users\Scottalm\Project_Tempore\Tempore_Python\Tempore\TemporeApp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -194,7 +285,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.location">
+  <component name="RunManager" selected="Python.db_testfile">
+    <configuration name="db_testfile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Tempore" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TemporeApp/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TemporeApp/tests/db_testfile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="location" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tempore" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -232,6 +344,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.db_testfile" />
         <item itemvalue="Python.location" />
         <item itemvalue="Python tests.Unittests for test_services.LocationServiceTest.test_get_location_coordinates" />
       </list>
@@ -265,21 +378,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14646997" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978564" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3290461" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30546623" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -287,78 +400,11 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.scss" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tempore/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tempore/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/tests/test_services.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/Tempore_Python-GmApHh_2/Lib/site-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="504" column="8" selection-start-line="504" selection-start-column="8" selection-end-line="504" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/Tempore_Python-GmApHh_2/Lib/site-packages/rest_framework/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/services/Schedule.py" />
-    <entry file="file://$PROJECT_DIR$/TemporeApp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tempore/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TemporeApp/services/schdule.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -395,10 +441,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/views.py">
+    <entry file="file://$PROJECT_DIR$/TemporeApp/tests/db_testfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/tests/test_services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/services/fetch_keys.py" />
+    <entry file="file://$PROJECT_DIR$/TemporeApp/update_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -407,7 +474,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TemporeApp/services/location.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="51">
           <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -415,34 +482,244 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tempore/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TemporeApp/services/response_service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/services/Slrequest.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TemporeApp/services/database_inserter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="51">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/services/Slrequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/Pages/style.css" />
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/Tempore_Python-GmApHh_2/Lib/site-packages/django/contrib/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="223" column="50" lean-forward="true" selection-start-line="223" selection-start-column="50" selection-end-line="223" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/Tempore_Python-GmApHh_2/Lib/site-packages/django/contrib/auth/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="5" column="284" selection-start-line="5" selection-start-column="284" selection-end-line="5" selection-end-column="284" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tempore/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tempore/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-539">
+          <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/img/ipad.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/img/demo-image-02.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/scss/grayscale.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" lean-forward="true" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/scss/_projects.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/scss/_masthead.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/img/masthead.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/css/grayscale.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="88" column="9" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/img/carl-nenzen-loven.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/img/demo-image-01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/img/bg-signup.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/img/bg-black-and-white-blur-electricity-.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/css/grayscale.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3705" selection-start-line="4" selection-start-column="3705" selection-end-line="4" selection-end-column="3705" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/static/staticPage/scss/_signup.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="122" selection-start-line="2" selection-start-column="122" selection-end-line="2" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="86" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/templates/registration/password_reset_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

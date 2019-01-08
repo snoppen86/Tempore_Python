@@ -14,12 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from TemporeApp import views
-from rest_framework.urlpatterns import format_suffix_patterns
+from django.urls import path, include
+from TemporeApp import views, update_user, urls
 
-urlpatterns = {
+urlpatterns = [
     path('admin/', admin.site.urls),
-    path('person/', views.get_person_coordinates_from_location)
-
-}
+    path('person/', views.get_person_coordinates_from_location),
+    path('person/update/', update_user.update_user_request),
+    path(r'', include('TemporeApp.urls'))
+]

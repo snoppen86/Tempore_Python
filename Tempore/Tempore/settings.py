@@ -27,8 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '10.138.14.37',
-    '127.0.0.1'
+    '127.0.0.1',
+    'localhost'
 ]
+
 
 MONGODB_URI = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/')
 # Application definition
@@ -41,12 +43,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'accounts.apps.AccountsConfig',
     'TemporeApp',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -59,7 +64,7 @@ ROOT_URLCONF = 'Tempore.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -140,3 +145,6 @@ LOGGING = {
         },
     },
 }
+CORS_ORIGIN_WHITELIST = 'localhost:8000',
+
+
