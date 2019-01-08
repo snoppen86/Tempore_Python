@@ -24,6 +24,29 @@
 
   <body id="page-top">
   {% if user.is_authenticated %}
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Tempore</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'logout'%}">Logout</a>
+            </li>
+            <li class="nav-item">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   {% else %}
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -57,7 +80,11 @@
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">Tempore</h1>
           <div class="badge badge-dark text-wrap mb-2 ">
-          <h2 class="text-white-50 mx-auto mt-2 mb-2">A responsive service to help you get to school</h2>
+            {% if user.is_authenticated %}
+            <h2 class="text-white-50 mx-auto mt-2 mb-2">Welcome {{user.username}}</h2>
+            {% else %}
+            <h2 class="text-white-50 mx-auto mt-2 mb-2">A responsive service to help you get to school</h2>
+            {%endif%}
           </div>
           <center>
           <a href="#about" class="btn btn-success js-scroll-trigger">Read more</a>
