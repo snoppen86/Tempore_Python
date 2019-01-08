@@ -27,8 +27,8 @@ def add_user_if_it_dosent_exist_in_db(person):
 
 
 def getting_user_info_by_email(person):
-    log.debug(user_col.find_one(person))
-    person_info = user_col.find_one(person)
+    log.debug(user_col.find_one({'email': person['email']}))
+    person_info = user_col.find_one({'email': person['email']})
     location = get_coordinates_for_location(person_info['address'])
     commute_travel_plan = get_trip_from_coordinates(location, person_info['scheduleDays'][str(tday.isoweekday())] \
         ['scheduleStart'])
