@@ -7,24 +7,58 @@
 
 {% block body%}
 <body class="text-center" style>
+    <header class="masthead">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Tempore</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'logout'%}">Logout</a>
+            </li>
+            <li class="nav-item">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        <div class="container d-flex h-100 align-items-center">
+            <div class="card bg-success mx-auto my-0" style="width: 21rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sign in</h5>
+                    <form method="post" action="{% url 'login' %}" class="form-signin">
+                        {% csrf_token %}
+                        <div class="input-group mb-3 ">
+                            <table>
+                                <tr>
+                                    <td>{{ form.username.label_tag }}</td>
+                                    <td>{{ form.username }}</td>
+                                </tr>
+                                <tr>
+                                    <td>{{ form.password.label_tag }}</td>
+                                    <td>{{ form.password }}</td>
+                                </tr>
 
-        <form method="post" action="{% url 'login' %}" class="form-signin">
-            {% csrf_token %}
-            <label for="{{ form.username.id_for_label }}">Username</label>
-           {{ form.username }}
+                            </table>
+                                <a class="btn btn-dark btn-lg" type="submit">Sign in</a>
 
-            <label for="{{ form.password.id_for_label }}">Password</label>
-            {{ form.password }}
-
-            <!--{{ form.username.label_tag }}-->
-            <!--{{ form.username }}-->
-            <!--{{ form.password.label_tag }}-->
-            <!--{{ form.password }}-->
-
-            <input type="submit" value="login" />
-            <input type="hidden" name="next" value="{{ next }}" />
-        </form>
-
+                            <!--<input class="btn btn-dark" type="submit" value="login" /></div>-->
+                            <!--<input type="hidden" name="next" value="{{ next }}" />-->
+                        </form>
+                        <p><a class="text-dark align-text-bottom" href="{% url 'password_reset' %}">Lost password?</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 {% endblock %}
 
