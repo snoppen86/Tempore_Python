@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+
+{%block head%}
+<title>Sign up</title>
+{% endblock%}
+
+{% block body%}
+<header class="masthead">
+    <div class="card mx-auto" style="width: 40rem;">
+        <div class="card-body">
+            <div class="container">
+                <h5 class="card-title ">Sign up</h5>
+                <form method="post">
+                    <div class="container">
+                        {% csrf_token %}
+                        {% for field in form %}
+                        <p>
+                            <p>{{field.label_tag}}</p>
+                            {{field}}
+                            {% if field.help_text %}
+                                <small style="color:gray">{{field.help_text}}</small>
+                            {% endif %}
+                            {% for error in field.error %}
+                                <p style="color:red">{{ error }}</p>
+                            {% endfor %}
+                        </p>
+                        {% endfor %}
+                        <button type="submit" class="btn btn-primary">Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}
