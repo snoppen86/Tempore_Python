@@ -1,6 +1,7 @@
 import logging
 from django.shortcuts import render,redirect
 from django.contrib.auth import login, authenticate
+from django.contrib.auth.models import User
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .services.response_service import main_response_handler
@@ -28,11 +29,15 @@ def signup(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('passqord1')
-            user = authenticate(username=username, password=raw_password)
-            login(request, user, backend='django.contrib.auth.backends.ModelBackend')
-            return redirect('index.html')
-        else:
-            form = SignUpForm
-            return render(request, 'signup.html', {'form': form})
+            # username = form.cleaned_data.get('username')
+            # raw_password = form.cleaned_data.get('passqord1')
+            # user = authenticate(username=username, password=raw_password)
+            # login(request, user, backend='django.contrib.auth.backends.ModelBackend')
+            return redirect('/')
+    else:
+        form = SignUpForm()
+        return render(request, 'registration/signup.html', {'form': form})
+
+def profile(request):
+    args={'user': request.user}
+    return render(request, 'registration/profile.html', args)
