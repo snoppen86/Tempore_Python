@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms',
     'rest_framework',
     'accounts.apps.AccountsConfig',
     'TemporeApp',
@@ -97,7 +96,6 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
-AUTH_USER_MODEL = 'TemporeApp.User'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
