@@ -18,8 +18,7 @@ from django.urls import path, include
 from TemporeApp import views, update_user, urls
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('person/', views.get_person_coordinates_from_location),
+    path('admin/', admin.site.urls, name='admin_dashboard'),
     path('person/update/', update_user.update_user_request),
     path(r'', include('TemporeApp.urls'))
 ]

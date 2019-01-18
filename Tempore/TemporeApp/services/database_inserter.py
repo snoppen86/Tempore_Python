@@ -19,19 +19,18 @@ def dose_user_exist_in_db(person):
         return True
 
 
-def add_user_if_it_dosent_exist_in_db(person):
-    if person['address'] and person['scheduleDays'][str(tday.isoweekday())] is None:
+def add_user_if_it_dosent_exist_in_db(data):
+    if data['address'] and data[str(tday.isoweekday())] is None:
         log.warning("You are missing some arguments", exc_info=True)
     log.debug("new user created")
-    user_col.insert_one(person)
+    user_col.insert_one(data)
 
 
-def getting_user_info_by_email(person):
-    log.debug(user_col.find_one({'email': person['email']}))
-    person_info = user_col.find_one({'email': person['email']})
+def getting_user_info_by_email(data):
+    log.debug(user_col.find_one({'email': data['email']}))
+    person_info = user_col.find_one({'email': data['email']})
     location = get_coordinates_for_location(person_info['address'])
-    commute_travel_plan = get_trip_from_coordinates(location, person_info['scheduleDays'][str(tday.isoweekday())] \
-        ['scheduleStart'])
+    commute_travel_plan = get_trip_from_coordinates(location, person_info[str(tday.isoweekday())])
     return commute_travel_plan
 
 def update_user_info(client_person):
