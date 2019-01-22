@@ -1,7 +1,6 @@
 {% extends 'base.html'%}
 {%block head%}
 <title>{{ user.first_name }}</title>
-
 {% endblock%}
 
 {%block body%}
@@ -11,6 +10,44 @@
     <p>First name: {{ user.first_name }}</p>
     <p>Last name: {{ user.last_name }}</p>
     <p>Email: {{ user.email }}</p>
-
+    <a href="{% url 'edit_profile'%}" class="btn btn-success js-scroll-trigger">Edit Profile</a>
 </div>
+<div class="container">
+
+    <form id="person" action="" method="post">
+        {% csrf_token %}
+        Name: <input type="text" name="Name" placeholder="{{ user.first_name }} {{ user.last_name }}"><br>
+        email: <input type="email" name="email" placeholder="{{ user.email }}"><br>
+        address:<input type="text" name="address" placeholder="address zip code"><br>
+        <h3>The the you start in the morning</h3>
+        Mon:<input type="time" name="1" ><br>
+        Tue:<input type="time" name="2" ><br>
+        Wed:<input type="time" name="3"><br>
+        Thu:<input type="time" name="4"><br>
+        Fri:<input type="time" name="5"><br>
+        <input id="submit" type="button" name="submit" value="submit" class="btn btn-success js-scroll-trigger">
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $("#submit").on('click', function(){
+
+            $.ajax({
+                url:'http://127.0.0.1:8000/person/',
+                type:"POST",
+                dataType:"json",
+                data:$("#person").serialize(),
+                success: function(result){
+                    console.log(result);
+                },
+                error: function(xhr, resp, text){
+                    console.log(xhr, resp, text);
+                }
+            })
+        });
+    });
+</script>
 {% endblock%}
