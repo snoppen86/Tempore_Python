@@ -23,7 +23,17 @@ def add_user_if_it_dosent_exist_in_db(data):
     if data['address'] and data[str(tday.isoweekday())] is None:
         log.warning("You are missing some arguments", exc_info=True)
     log.debug("new user created")
-    user_col.insert_one(data)
+    user = {
+        'Name': data['Name'],
+        'email': data['email'],
+        'address': data['address'],
+        '1': data['1'],
+        '2': data['2'],
+        '3': data['3'],
+        '4': data['4'],
+        '5': data['5']
+    }
+    user_col.insert_one(user)
 
 
 def getting_user_info_by_email(data):

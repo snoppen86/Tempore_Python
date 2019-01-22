@@ -1,4 +1,6 @@
 import logging
+import json
+from django.http import QueryDict
 from django.shortcuts import render,redirect
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
@@ -13,7 +15,11 @@ log = logging.getLogger(__file__)
 @api_view(['POST'])
 def get_person_coordinates_from_location(request):
     try:
-        data = request.data
+        #print(request.POST)
+        # data = QueryDict(request.data, mutable=True)
+        # data.pop('Name')
+        data = request.POST
+        print(data['Name'], data['address'])
         response_service = main_response_handler(data)
         return Response(response_service)
     except:  # NOQA
