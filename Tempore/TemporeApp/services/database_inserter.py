@@ -20,7 +20,7 @@ def dose_user_exist_in_db(person):
 
 
 def add_user_if_it_dosent_exist_in_db(data):
-    if data['address'] and data[str(tday.isoweekday())] is None:
+    if data[1] and data[str(tday.isoweekday())]is None:
         log.warning("You are missing some arguments", exc_info=True)
     log.debug("new user created")
     user = {
@@ -42,6 +42,7 @@ def getting_user_info_by_email(data):
     location = get_coordinates_for_location(person_info['address'])
     commute_travel_plan = get_trip_from_coordinates(location, person_info[str(tday.isoweekday())])
     return commute_travel_plan
+
 
 def update_user_info(client_person):
     user_col.find_one_and_update(client_person)
