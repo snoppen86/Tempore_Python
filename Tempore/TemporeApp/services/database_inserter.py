@@ -20,7 +20,7 @@ def dose_user_exist_in_db(person):
 
 
 def add_user_if_it_dosent_exist_in_db(data):
-    if data[1] and data[str(tday.isoweekday())]is None:
+    if data['address'] and data[str(tday.isoweekday())]is None:
         log.warning("You are missing some arguments", exc_info=True)
     log.debug("new user created")
     user = {

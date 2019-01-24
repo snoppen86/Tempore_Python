@@ -11,7 +11,6 @@ tday = datetime.date.today()
 
 def main_response_handler(data):
     log.info(f"{data}")
-    log.info(f"{tday.isoweekday()}")
     travel_response = _travel_response_handler(data)
     return travel_response
 

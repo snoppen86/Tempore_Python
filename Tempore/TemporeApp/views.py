@@ -15,9 +15,6 @@ log = logging.getLogger(__file__)
 @api_view(['POST'])
 def get_person_coordinates_from_location(request):
     try:
-        #print(request.POST)
-        # data = QueryDict(request.data, mutable=True)
-        # data.pop('Name')
         data = request.POST
         print(data['Name'], data['address'])
         response_service = main_response_handler(data)
