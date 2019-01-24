@@ -133,7 +133,7 @@ USE_TZ = True
 CRISPY_TEMPLATES_PACK = 'bootstrap4'
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = '/static/'
 
 LOGGING = {
     'version': 1,
