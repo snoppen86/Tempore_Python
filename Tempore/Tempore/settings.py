@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts.apps.AccountsConfig',
     'TemporeApp',
-    # 'corsheaders'
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
