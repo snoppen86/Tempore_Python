@@ -15,7 +15,6 @@
 <div class="container">
 
     <form id="person" action="" method="post">
-        {% csrf_token %}
         Name: <input type="text" name="Name" placeholder="{{ user.first_name }} {{ user.last_name }}"><br>
         email: <input type="email" name="email" placeholder="{{ user.email }}"><br>
         address:<input type="text" name="address" placeholder="address zip code"><br>
@@ -31,15 +30,25 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 <script>
     $(document).ready(function(){
         $("#submit").on('click', function(){
-
             $.ajax({
                 url:'http://127.0.0.1:8000/person/',
                 type:"POST",
                 dataType:"json",
-                data:$("#person"),
+                data:$("#person").serialize(),
+                beforeSend: function (xhr, settings) {
+                    var csrftoken = Cookies.get('csrftoken');
+                    function csrfSafeMethod(method) {
+                        // these HTTP methods do not require CSRF protection
+                        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+                        }
+                        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                        }
+                },
                 success: function(result){
                     console.log(result);
                 },
@@ -49,5 +58,6 @@
             })
         });
     });
+
 </script>
 {% endblock%}
