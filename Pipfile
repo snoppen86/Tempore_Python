@@ -38,8 +38,6 @@ PyYAML = "==3.13"
 django = "*"
 django-rest-framework = "*"
 pymongo = "*"
-djagno-crispy-forms = "*"
-django-crispy-forms = "*"
 requests = "*"
 
 [requires]
