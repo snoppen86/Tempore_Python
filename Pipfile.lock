@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "11c339f9d68e5f13a6877908ea18840b38a2a67b47c482f057cc87d3014628e9"
+            "sha256": "3c54a580278088229f4398f5f1c6d341f29c1a68797d9a3606737078a48e605f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -78,11 +78,19 @@
         },
         "django": {
             "hashes": [
-                "sha256:146aa583364553c9ecbed55613a6c27bc23226048f86ed183350c80df3f2a844",
-                "sha256:737bd3d5f70cb8bde3c660e69b077a0221b47caf499d4d3759fb086376002d4a"
+                "sha256:a32c22af23634e1d11425574dce756098e015a165be02e4690179889b207c7a8",
+                "sha256:d6393918da830530a9516bbbcbf7f1214c3d733738779f06b0f649f49cc698c3"
             ],
             "index": "pypi",
-            "version": "==2.2a1"
+            "version": "==2.1.5"
+        },
+        "django-cors-headers": {
+            "hashes": [
+                "sha256:5545009c9b233ea7e70da7dbab7cb1c12afa01279895086f98ec243d7eab46fa",
+                "sha256:c4c2ee97139d18541a1be7d96fe337d1694623816d83f53cb7c00da9b94acae1"
+            ],
+            "index": "pypi",
+            "version": "==2.4.0"
         },
         "django-rest-framework": {
             "hashes": [
@@ -449,14 +457,6 @@
             "index": "pypi",
             "version": "==4.6.2.69232.0"
         },
-        "sc2": {
-            "hashes": [
-                "sha256:481c035a50731a6cc63b290a4ef31b634cbb238ecaea0be759e29c47688bc1b3",
-                "sha256:edd0738486d4186f52679c063f20e278cabea2ad0647eabb6afb5bf99caf13e8"
-            ],
-            "index": "pypi",
-            "version": "==0.10.6"
-        },
         "scipy": {
             "hashes": [
                 "sha256:0611ee97296265af4a21164a5323f8c1b4e8e15c582d3dfa7610825900136bb7",
@@ -498,13 +498,6 @@
             ],
             "index": "pypi",
             "version": "==1.11.0"
-        },
-        "sqlparse": {
-            "hashes": [
-                "sha256:ce028444cfab83be538752a2ffdb56bc417b7784ff35bb9a3062413717807dec",
-                "sha256:d9cf190f51cbb26da0412247dfe4fb5f4098edb73db84e02f9fc21fdca31fed4"
-            ],
-            "version": "==0.2.4"
         },
         "urllib3": {
             "hashes": [

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf8918f0-b431-441e-a911-dddcf6e2fcea" name="Default Changelist" comment="" />
+    <list default="true" id="cf8918f0-b431-441e-a911-dddcf6e2fcea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Tempore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tempore/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +28,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tempore/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2312">
-                  <caret line="136" selection-start-line="136" selection-end-line="136" />
+                <state relative-caret-position="406">
+                  <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -56,7 +58,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/TemporeApp/services/database_inserter.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="340">
@@ -194,7 +196,6 @@
         <option value="$PROJECT_DIR$/TemporeApp/static/staticPage/scss/_signup.scss" />
         <option value="$PROJECT_DIR$/TemporeApp/static/staticPage/css/grayscale.min.css" />
         <option value="$PROJECT_DIR$/TemporeApp/models.py" />
-        <option value="$PROJECT_DIR$/Tempore/settings.py" />
         <option value="$PROJECT_DIR$/TemporeApp/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/TemporeApp/templates/registration/edit_profile.html" />
         <option value="$PROJECT_DIR$/TemporeApp/templates/registration/change_password.html" />
@@ -208,10 +209,11 @@
         <option value="$PROJECT_DIR$/TemporeApp/views.py" />
         <option value="$PROJECT_DIR$/TemporeApp/services/database_inserter.py" />
         <option value="$PROJECT_DIR$/TemporeApp/templates/registration/profile.html" />
+        <option value="$PROJECT_DIR$/Tempore/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="361" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -257,17 +259,6 @@
             <path>
               <item name="Tempore" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Tempore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (Tempore_Python-GmApHh_2) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Tempore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (Tempore_Python-GmApHh_2) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -404,7 +395,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1227608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -681,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tempore/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2312">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TemporeApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -756,6 +741,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
           <caret line="62" selection-start-line="62" selection-end-line="62" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tempore/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
         </state>
       </provider>
     </entry>
