@@ -27,6 +27,14 @@
         <input id="submit" type="button" name="submit" value="submit" class="btn btn-success js-scroll-trigger">
     </form>
 </div>
+<div>
+    <strong id="name"></strong> here is your best route!
+    <table>
+        <tbody>
+        <tr><td id="destionation_cell"></td></tr>
+        </tbody>
+    </table>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -51,6 +59,7 @@
                 },
                 success: function(result){
                     console.log(result);
+                    $("#destination_cell").val(result.destination)
                 },
                 error: function(xhr, resp, text){
                     console.log(xhr, resp, text);
