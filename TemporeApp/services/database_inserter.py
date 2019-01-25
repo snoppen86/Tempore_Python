@@ -6,7 +6,7 @@ from .Slrequest import get_trip_from_coordinates
 import datetime
 
 log = logging.getLogger(__file__)
-db = pymongo.MongoClient(settings.MONGODB_URI, connect=False)
+db = pymongo.MongoClient(settings.MONGODB_URL, connect=False)
 accounts = db['Accounts']
 user_col = accounts['users']
 tday = datetime.date.today()
