@@ -41,6 +41,9 @@ def signup(request):
                 return redirect('/')
             except:
                 log.exception("Failed to save sign up")
+        else:
+            log.error("Form is not valid")
+
     form = SignUpForm()
     return render(request, 'registration/signup.html', {'form': form})
 
