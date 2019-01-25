@@ -28,18 +28,21 @@ def render_website(request):
 
 
 def signup(request):
+
     if request.method == 'POST':
         form = SignUpForm(request.POST)
         if form.is_valid():
-            form.save()
+            try:
+                form.save()
             # username = form.cleaned_data.get('username')
             # raw_password = form.cleaned_data.get('passqord1')
             # user = authenticate(username=username, password=raw_password)
             # login(request, user, backend='django.contrib.auth.backends.ModelBackend')
-            return redirect('/')
-    else:
-        form = SignUpForm()
-        return render(request, 'registration/signup.html', {'form': form})
+                return redirect('/')
+            except:
+                log.exception("Failed to save sign up")
+    form = SignUpForm()
+    return render(request, 'registration/signup.html', {'form': form})
 
 
 def view_profile(request):
