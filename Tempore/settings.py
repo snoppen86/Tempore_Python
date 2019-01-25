@@ -15,7 +15,7 @@ import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MONGODB_URI = os.environ.get('MONGODB_URI', "mongodb://scotter:bas@ds119024.mlab.com:19024/tempore_test_base")
+MONGODB_URI = os.environ.get('MONGODB_URI', "mongodb://heroku_wq6dlm79:m43si5bbvs22l0o6o38vcvb22h@ds211865.mlab.com:11865/heroku_wq6dlm79")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
