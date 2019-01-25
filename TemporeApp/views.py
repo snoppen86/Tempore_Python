@@ -16,7 +16,7 @@ log = logging.getLogger(__file__)
 def get_person_coordinates_from_location(request):
     try:
         data = request.POST
-        print(data['Name'], data['address'])
+        log.info(f"{data['Name']}, {data['address']}")
         response_service = main_response_handler(data)
         return Response(response_service)
     except:  # NOQA
