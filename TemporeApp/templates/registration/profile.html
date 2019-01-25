@@ -43,7 +43,7 @@
     $(document).ready(function(){
         $("#submit").on('click', function(){
             $.ajax({
-                url:'/person/',
+                url:'https://realtempore.herokuapp.com/person/',
                 type:"POST",
                 dataType:"json",
                 data:$("#person").serialize(),
