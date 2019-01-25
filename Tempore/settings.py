@@ -23,12 +23,14 @@ MONGODB_URI = os.environ.get('MONGODB_URI', "mongodb://scotter:bas@ds119024.mlab
 SECRET_KEY = '@r+)3e$)f!3b0@v-momalnu1f5)(w28vwwa6u7nmyc!)r+ug^v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+ENV = os.environ.get('ENV', "DEBUG")
+DEBUG = True if ENV == 'DEBUG' else False
 
 ALLOWED_HOSTS = [
     '10.138.14.37',
     '127.0.0.1',
-    'localhost'
+    'localhost',
+    'realtempore.herokuapp.com'
 ]
 
 
