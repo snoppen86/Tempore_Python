@@ -17,6 +17,7 @@ def dose_user_exist_in_db(person):
     if user_col.find_one({'email': user['email']}):
         log.debug("getting user info by email")
         return True
+    return False
 
 
 def add_user_if_it_dosent_exist_in_db(data):
@@ -25,7 +26,7 @@ def add_user_if_it_dosent_exist_in_db(data):
     log.debug("new user created")
     user = {
         'Name': data['Name'],
-        'email': data['email'],
+        'email': data['email'].lower(),
         'address': data['address'],
         '1': data['1'],
         '2': data['2'],
@@ -37,7 +38,7 @@ def add_user_if_it_dosent_exist_in_db(data):
 
 
 def getting_user_info_by_email(data):
-    log.debug(user_col.find_one({'email': data['email']}))
+    log.info(user_col.find_one({'email': data['email']}))
     person_info = user_col.find_one({'email': data['email']})
     location = get_coordinates_for_location(person_info['address'])
     commute_travel_plan = get_trip_from_coordinates(location, person_info[str(tday.isoweekday())])

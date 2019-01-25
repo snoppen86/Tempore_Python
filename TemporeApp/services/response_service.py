@@ -16,11 +16,15 @@ def main_response_handler(data):
 
 
 def _travel_response_handler(data):
+    print("1")
     if dose_user_exist_in_db(data):
         travel_plan = getting_user_info_by_email(data)
         return {'Travel plan': travel_plan}
+    print("1")
+    log.info("User doesnt exist")
     add_user_if_it_dosent_exist_in_db(data)
     location = get_coordinates_for_location(data['address'])
     person_schedule = data[str(tday.isoweekday())]
     commute_travel_plan = get_trip_from_coordinates(location, person_schedule)
+    print("1")
     return {'Travel plan': commute_travel_plan}

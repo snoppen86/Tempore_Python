@@ -1,5 +1,6 @@
 import requests
-import json
+import logging
+log = logging.getLogger(__file__)
 
 URL = "https://geocoder.api.here.com/6.2/geocode.json?app_id=rh8e4vbpg3DqRj61Nes5&app_code=-nm97oRF_yvf90ACG5tJFw\
 "
@@ -17,5 +18,6 @@ def get_coordinates_for_location(location: str):
 
 
 def _get_location_from_response(data):
-    print(data['Response']['View'][0]['Result'][0]['Location'])
+    log.info(data)
+    log.info(data['Response']['View'][0]['Result'][0]['Location'])
     return data['Response']['View'][0]['Result'][0]['Location']
