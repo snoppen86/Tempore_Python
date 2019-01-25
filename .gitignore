@@ -8,3 +8,7 @@ requirements\.txt
 *.xml
 
 *.svg
+
+*.sqlite3
+
+*.iml
