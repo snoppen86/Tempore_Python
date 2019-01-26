@@ -4,45 +4,66 @@
 {% endblock%}
 
 {%block body%}
-<div class="container">
-    <h1>Profile</h1>
-    <p>Username: {{ user }}</p>
-    <p>First name: {{ user.first_name }}</p>
-    <p>Last name: {{ user.last_name }}</p>
-    <p>Email: {{ user.email }}</p>
-    <a href="{% url 'edit_profile'%}" class="btn btn-success js-scroll-trigger">Edit Profile</a>
+<div class="masthead">
+    <div class="container">
+        <div class="row pt-4">
+           <!--Profile info-->
+            <h1>Profile</h1>
+            <div class="col-sm">
+                <p class="text-white">Username: {{ user }}</p>
+                <p class="text-white">First name: {{ user.first_name }}</p>
+                <p class="text-white">Last name: {{ user.last_name }}</p>
+                <p class="text-white">Email: {{ user.email }}</p>
+                <a href="{% url 'edit_profile'%}" class="btn btn-success js-scroll-trigger">Edit Profile</a>
+            </div>
+            <!--Travel Form-->
+            <div class="col-sm">
+                <form id="person" action="" method="post">
+                    <div class="text-white">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input id="name" type="text" name="Name" class="form-control"><br>
+                            <label for="Email">Email:</label>
+                            <input id="Email" type="email" name="email" class="form-control"><br>
+                            <label for="Address">Adress och ort :</label>
+                            <input id="Address" type="text" name="address" class="form-control"><br>
+                            <h3 class="text-white">The the you start in the morning</h3>
+                            <label for="id1">Mon:</label>
+                            <input id="id1" type="time" name="1" class="form-control input-sm"><br>
+                            <label for="id2">Tue:</label>
+                            <input id="id2" type="time" name="2" class="form-control" ><br>
+                            <label for="id3">Wed:</label>
+                            <input id="id3" type="time" name="3" class="form-control"><br>
+                            <label for="id4">Thu:</label>
+                            <input id="id4" type="time" name="4" class="form-control"><br>
+                            <label for="id5">Fri:</label>
+                            <input id="id5" type="time" name="5" class="form-control"><br>
+                        </div>
+                    </div>
+                    <input id="submit" type="button" name="submit" value="submit" class="btn btn-success js-scroll-trigger">
+                </form>
+            </div>
+            <!--Travel Response-->
+            <div class="col-sm">
+                <ul class="list-group-transparent ">
+                    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="0">
+                    </li>
+                    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="1">
+                    </li>
+                    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="2">
+                    </li>
+                    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="3">
+                    </li>
+                    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="4">
+                    </li>
+                    <li class="list-group-item d-flex flex-column justify-content-center align-self-start " id="5">
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="container">
-
-    <form id="person" action="" method="post">
-        Name: <input type="text" name="Name" placeholder="{{ user.first_name }} {{ user.last_name }}"><br>
-        email: <input type="email" name="email" placeholder="{{ user.email }}"><br>
-        address:<input type="text" name="address" placeholder="address zip code"><br>
-        <h3>The the you start in the morning</h3>
-        Mon:<input type="time" name="1" ><br>
-        Tue:<input type="time" name="2" ><br>
-        Wed:<input type="time" name="3"><br>
-        Thu:<input type="time" name="4"><br>
-        Fri:<input type="time" name="5"><br>
-        <input id="submit" type="button" name="submit" value="submit" class="btn btn-success js-scroll-trigger">
-    </form>
-</div>
-<ul class="list-group">
-    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="0">
-    </li>
-    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="1">
-    </li>
-    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="2">
-    </li>
-    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="3">
-    </li>
-    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="4">
-    </li>
-    <li class="list-group-item d-flex flex-column justify-content-center align-self-start " id="5">
-    </li>
-
-</ul>
-
 <script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
