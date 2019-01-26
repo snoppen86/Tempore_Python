@@ -38,12 +38,11 @@ def signup(request):
             # raw_password = form.cleaned_data.get('passqord1')
             # user = authenticate(username=username, password=raw_password)
             # login(request, user, backend='django.contrib.auth.backends.ModelBackend')
-                return redirect('/login')
+                return redirect('accounts/login/')
             except:
                 log.exception("Failed to save sign up")
         else:
             log.error("Form is not valid")
-
     form = SignUpForm()
     return render(request, 'registration/signup.html', {'form': form})
 
