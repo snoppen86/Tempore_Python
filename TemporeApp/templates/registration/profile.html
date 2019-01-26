@@ -27,14 +27,21 @@
         <input id="submit" type="button" name="submit" value="submit" class="btn btn-success js-scroll-trigger">
     </form>
 </div>
-<div>
-    <strong id="name"></strong> here is your best route!
-    <table>
-        <tbody>
-        <tr><td id="destionation_cell"></td></tr>
-        </tbody>
-    </table>
-</div>
+<ul class="list-group">
+    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="0">
+    </li>
+    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="1">
+    </li>
+    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="2">
+    </li>
+    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="3">
+    </li>
+    <li class="list-group-item d-flex flex-column justify-content-center align-self-start" id="4">
+    </li>
+    <li class="list-group-item d-flex flex-column justify-content-center align-self-start " id="5">
+    </li>
+
+</ul>
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -58,11 +65,24 @@
                         }
                 },
                 success: function(result){
-                    console.log(result);
-                    $("#destination_cell").val(result.destination)
+                    var responseParse = result.TravelPlan.legs;
+                    var infoBox= '<li class="list-group-item list-group-item-success" id="infotext0"></li>'
+                    var timestamp = '<span class="badge badge-primary" id="t0"></span>';
+                    var transportName = '<span class="badge badge-success" id="transport0"></span>';
+                    for(var i=0; i < responseParse.length; i++){
+                        console.log(responseParse[i])
+                        var timeChanger= timestamp.replace('t0', 't'+i);
+                        var transportChanger= transportName.replace('transport0', 'transport'+i);
+                        var infoChanger = infoBox.replace('infotext0', 'infotext'+i)
+                         $('#'+i).html(result.TravelPlan.legs[i].origin.name + timeChanger + transportChanger + infoChanger);
+                         $('#infotext'+i).html(responseParse[i].destination.name + timeChanger + transportChanger);
+                         $('#t'+i).text(result.TravelPlan.legs[i].origin.time);
+                         $('#transport'+i).text(result.TravelPlan.legs[i].origin.TransportName);
+                    }
                 },
                 error: function(xhr, resp, text){
                     console.log(xhr, resp, text);
+
                 }
             })
         });

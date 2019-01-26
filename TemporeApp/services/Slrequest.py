@@ -23,12 +23,16 @@ def format_leg(leg):
         'origin': {
             'name': leg['Origin']['name'],
             'time': leg['Origin']['time'],
-            'date': leg['Origin']['date']
+            'date': leg['Origin']['date'],
+            'TransportName': leg['name'],
+            'type': leg['type']
         },
         'destination': {
             'name': leg['Destination']['name'],
             'time': leg['Destination']['time'],
-            'date': leg['Destination']['date']
+            'date': leg['Destination']['date'],
+            'TransportName': leg['name'],
+            'type': leg['type']
         },
         'name': leg['name'],
         'type': leg['type']

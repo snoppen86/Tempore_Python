@@ -22,7 +22,7 @@ def dose_user_exist_in_db(person):
 
 def upsert_user_info(data):
     user = _get_user_data(data)
-    user_col.update_one({'email': user['email']}, {"$set": user}, upsert=True)
+    user_col.update_one({'email': user['email']}, {"$set": {'email': user['email']}}, upsert=True,)
 
 
 def add_user_if_it_dosent_exist_in_db(data):
