@@ -5,3 +5,5 @@ URL = f"http://api.sl.se/api2/trafficsituation.json? key=4d45370ae02145a89811b05
 
 def get_travel_status():
     r = requests.get(url=URL)
+    return print(r.json())
+
