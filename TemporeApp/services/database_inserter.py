@@ -14,7 +14,7 @@ tday = datetime.date.today()
 
 def dose_user_exist_in_db(person):
     user = person
-    if user_col.find_one({'email': user['email']}):
+    if user_col.find_one({'email': user['email'].lower()}):
         log.debug("getting user info by email")
         return True
     return False
@@ -22,11 +22,11 @@ def dose_user_exist_in_db(person):
 
 def upsert_user_info(data):
     user = _get_user_data(data)
-    user_col.update_one({'email': user['email']}, {"$set": {'email': user['email']}}, upsert=True,)
+    user_col.update_one({'email': user['email']}, {"$set":  {'email': user['email']}}, upsert=True,)
 
-
+# str(tday.isoweekday())
 def add_user_if_it_dosent_exist_in_db(data):
-    if data['address'] and data[str(tday.isoweekday())]is None:
+    if data['address'] and data['1']is None:
         log.warning("You are missing some arguments", exc_info=True)
     log.debug("new user created")
     user = _get_user_data(data)
@@ -45,12 +45,12 @@ def _get_user_data(data):
     }
 
 def getting_user_info_by_email(data):
-    log.info(user_col.find_one({'email': data['email']}))
-    person_info = user_col.find_one({'email': data['email']})
+    log.info(user_col.find_one({'email': data['email'].lower()}))
+    person_info = user_col.find_one({'email': data['email'].lower()})
     location = get_coordinates_for_location(person_info['address'])
-    commute_travel_plan = get_trip_from_coordinates(location, person_info[str(tday.isoweekday())])
+    commute_travel_plan = get_trip_from_coordinates(location, person_info['1'])
     return commute_travel_plan
 
-
+# str(tday.isoweekday())
 
 

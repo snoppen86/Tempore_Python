@@ -38,7 +38,7 @@ def signup(request):
             # raw_password = form.cleaned_data.get('passqord1')
             # user = authenticate(username=username, password=raw_password)
             # login(request, user, backend='django.contrib.auth.backends.ModelBackend')
-                return redirect('accounts/login/')
+                return redirect('login')
             except:
                 log.exception("Failed to save sign up")
         else:

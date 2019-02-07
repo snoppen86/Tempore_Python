@@ -4,6 +4,7 @@
 
 {%block head%}
 <title>Login</title>
+<link rel="shortcut icon" href="{% static 'staticPage/img/tempore_icon.jpg' %}">
 
 {% endblock%}
 
@@ -52,8 +53,10 @@
 
                             </table>
                                 <button class="btn btn-dark btn-lg" type="submit">Sign in</button>
+                        </div>
                     </form>
                     <p><a class="text-dark align-text-bottom" href="{% url 'password_reset' %}">Lost password?</a></p>
+
                 </div>
             </div>
         </div>
