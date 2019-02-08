@@ -29,7 +29,7 @@ ENV = os.environ.get('ENV', "DEBUG")
 DEBUG = True if ENV == 'DEBUG' else False
 
 ALLOWED_HOSTS = [
-    '10.138.14.37',
+    '10.138.12.69',
     '127.0.0.1',
     'localhost',
     'realtempore.herokuapp.com'

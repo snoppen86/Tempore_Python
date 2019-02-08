@@ -1,16 +1,20 @@
 {% extends 'base.html'%}
 {%block head%}
 <title>{{ user.first_name }}</title>
-<link rel="shortcut icon" href="{% static 'staticPage/img/tempore_icon.jpg' %}">
 
 {% endblock%}
 
 {%block body%}
 <div class="masthead">
     <div class="container">
+            <div class="col">
+                <a  class="btn btn-primary btn-sm"href="https://goo.gl/forms/6ddFX10b2CtD1Cg53"> Formulär</a>
+            </div>
         <div class="row pt-4">
-           <!--Profile info-->
+
             <h1>Profile</h1>
+
+           <!--Profile info-->
             <div class="col-sm">
                 <p class="text-white">Username: {{ user }}</p>
                 <p class="text-white">First name: {{ user.first_name }}</p>
@@ -18,6 +22,7 @@
                 <p class="text-white">Email: {{ user.email }}</p>
                 <a href="{% url 'edit_profile'%}" class="btn btn-success js-scroll-trigger">Edit Profile</a>
             </div>
+
             <!--Travel Form-->
             <div class="col-sm">
                 <form id="person" action="" method="post">
@@ -29,7 +34,7 @@
                             <input id="Email" type="email" name="email" class="form-control"><br>
                             <label for="Address">Adress och ort :</label>
                             <input id="Address" type="text" name="address" class="form-control"><br>
-                            <h3 class="text-white">The the you start in the morning</h3>
+                            <h3 class="text-white">The time you start in the morning</h3>
                             <label for="id1">Mon:</label>
                             <input id="id1" type="time" name="1" class="form-control input-sm"><br>
                             <label for="id2">Tue:</label>
@@ -110,6 +115,19 @@
             })
         });
     });
+    $(window).on('load', function(){
+           $.ajax({
+                url:'/status/',
+                type:"GET",
+                dataType:"json",
+                success: function(result){
+                    console.log(result);
+                },
+                error:function(xhr, resp, text){
+                    console.log(xhr, resp, text);
+                }
+           });
+       });
 
 </script>
 {% endblock%}
