@@ -32,6 +32,7 @@ def travel_status(request):
     travel_status_response = get_travel_status()
     return Response(travel_status_response)
 
+
 def signup(request):
 
     if request.method == 'POST':

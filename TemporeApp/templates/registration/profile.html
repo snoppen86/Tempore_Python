@@ -18,6 +18,7 @@
                 <p class="text-white">Email: {{ user.email }}</p>
                 <a href="{% url 'edit_profile'%}" class="btn btn-success js-scroll-trigger">Edit Profile</a>
             </div>
+
             <!--Travel Form-->
             <div class="col">
                 <form id="person" action="" method="post">
@@ -154,6 +155,19 @@
             })
         });
     });
+    $(window).on('load', function(){
+           $.ajax({
+                url:'/status/',
+                type:"GET",
+                dataType:"json",
+                success: function(result){
+                    console.log(result);
+                },
+                error:function(xhr, resp, text){
+                    console.log(xhr, resp, text);
+                }
+           });
+       });
 
 </script>
 {% endblock%}

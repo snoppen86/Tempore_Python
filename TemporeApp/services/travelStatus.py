@@ -7,3 +7,6 @@ def get_travel_status():
     r = requests.get(url=URL)
     return r.json()
 
+
+
+

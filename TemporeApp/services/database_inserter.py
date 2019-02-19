@@ -13,7 +13,7 @@ tday = datetime.date.today()
 
 
 def dose_user_exist_in_db(person):
-    user = person
+    user = _get_user_data(person)
     if user_col.find_one({'email': user['email'].lower()}):
         log.debug("getting user info by email")
         return True
@@ -21,8 +21,8 @@ def dose_user_exist_in_db(person):
 
 
 def upsert_user_info(data):
-    user = _get_user_data(data)
-    user_col.update_one({'email': user['email']}, {"$set":  {'email': user['email']}}, upsert=True,)
+    if dose_user_exist_in_db(data) is True:
+        user_col.update_one({'email': data['email']}, {"$set":  {'email': data['email']}}, upsert=True,)
 
 # str(tday.isoweekday())
 def add_user_if_it_dosent_exist_in_db(data):
