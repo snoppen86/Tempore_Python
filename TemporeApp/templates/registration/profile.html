@@ -18,7 +18,6 @@
                 <p class="text-white">Email: {{ user.email }}</p>
                 <a href="{% url 'edit_profile'%}" class="btn btn-success js-scroll-trigger">Edit Profile</a>
             </div>
-
             <!--Travel Form-->
             <div class="col">
                 <form id="person" action="" method="post">
@@ -32,7 +31,7 @@
                             <input id="Address" type="text" name="address" class="form-control"><br>
                             <h3 class="text-white">The time you start in the morning</h3>
                             <label for="id1">Mon:</label>
-                            <input id="id1" type="time" name="1" class="form-control input-sm"><br>
+                            <input id="id1" type="time" name="1" class="form-control"><br>
                             <label for="id2">Tue:</label>
                             <input id="id2" type="time" name="2" class="form-control" ><br>
                             <label for="id3">Wed:</label>
@@ -142,10 +141,14 @@
                         var timeChanger= timestamp.replace('t0', 't'+i);
                         var transportChanger= transportName.replace('transport0', 'transport'+i);
                         var infoChanger = infoBox.replace('infotext0', 'infotext'+i)
-                         $('#'+i).html(result.TravelPlan.legs[i].origin.name + timeChanger + transportChanger + infoChanger);
-                         $('#infotext'+i).html(responseParse[i].destination.name + timeChanger + transportChanger);
+                         $('#'+i).html("från " +result.TravelPlan.legs[i].origin.name+ timeChanger + transportChanger + infoChanger);
+                         $('#infotext'+i).html("till " +responseParse[i].destination.name+ timeChanger + transportChanger);
                          $('#t'+i).text(result.TravelPlan.legs[i].origin.time);
-                         $('#transport'+i).text(result.TravelPlan.legs[i].origin.TransportName);
+                         if (responseParse[i].type == "JNY"){
+                            $('#transport'+i).text(result.TravelPlan.legs[i].origin.TransportName+' mot '+responseParse[i].direction);
+                        }else{
+                            $('#transport'+i).text('måste du gå');
+                        }
                     }
                 },
                 error: function(xhr, resp, text){
@@ -155,19 +158,6 @@
             })
         });
     });
-    $(window).on('load', function(){
-           $.ajax({
-                url:'/status/',
-                type:"GET",
-                dataType:"json",
-                success: function(result){
-                    console.log(result);
-                },
-                error:function(xhr, resp, text){
-                    console.log(xhr, resp, text);
-                }
-           });
-       });
 
 </script>
 {% endblock%}

@@ -1,7 +1,7 @@
 import requests
 
 URL = f"http://api.sl.se/api2/TravelplannerV3/trip.json?key=aa704a5c893c433f9c0a38c00371a300\
-&lang=sv&destExtId=1319&searchForArrival=1"
+&lang=sv&destId=1319&searchForArrival=1"
 
 
 def get_trip_from_coordinates(position: str, schedule_start: str):
@@ -19,22 +19,43 @@ def _get_legs_from_trip(data):
 
 
 def format_leg(leg):
-    return {
-        'origin': {
-            'name': leg['Origin']['name'],
-            'time': leg['Origin']['time'],
-            'date': leg['Origin']['date'],
-            'TransportName': leg['name'],
+    if leg['type'] == 'JNY':
+        return {
+            'origin': {
+                'name': leg['Origin']['name'],
+                'time': leg['Origin']['time'],
+                'date': leg['Origin']['date'],
+                'TransportName': leg['name'],
+                'type': leg['type']
+            },
+            'destination': {
+                'name': leg['Destination']['name'],
+                'time': leg['Destination']['time'],
+                'date': leg['Destination']['date'],
+                'TransportName': leg['name'],
+                'type': leg['type']
+            },
+            'name': leg['name'],
+            'type': leg['type'],
+            'direction': leg['direction']
+        }
+    else:
+        return {
+            'origin': {
+                'name': leg['Origin']['name'],
+                'time': leg['Origin']['time'],
+                'date': leg['Origin']['date'],
+                'TransportName': leg['name'],
+                'type': leg['type']
+            },
+            'destination': {
+                'name': leg['Destination']['name'],
+                'time': leg['Destination']['time'],
+                'date': leg['Destination']['date'],
+                'TransportName': leg['name'],
+                'type': leg['type']
+            },
+            'name': leg['name'],
             'type': leg['type']
-        },
-        'destination': {
-            'name': leg['Destination']['name'],
-            'time': leg['Destination']['time'],
-            'date': leg['Destination']['date'],
-            'TransportName': leg['name'],
-            'type': leg['type']
-        },
-        'name': leg['name'],
-        'type': leg['type']
-    }
+        }
 

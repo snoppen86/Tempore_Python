@@ -48,7 +48,7 @@ def getting_user_info_by_email(data):
     log.info(user_col.find_one({'email': data['email'].lower()}))
     person_info = user_col.find_one({'email': data['email'].lower()})
     location = get_coordinates_for_location(person_info['address'])
-    commute_travel_plan = get_trip_from_coordinates(location, person_info['1'])
+    commute_travel_plan = get_trip_from_coordinates(location, person_info[str(tday.isoweekday())])
     return commute_travel_plan
 
 # str(tday.isoweekday())
