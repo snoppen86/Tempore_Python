@@ -5,6 +5,7 @@ from django.views.generic.base import TemplateView
 
 
 urlpatterns = [
+    path('status/', views.travel_status),
     path('person/', views.get_person_coordinates_from_location),
     path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),

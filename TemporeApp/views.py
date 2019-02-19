@@ -6,6 +6,7 @@ from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from .services.travelStatus import get_travel_status
 from .services.response_service import main_response_handler
 from .core.forms import SignUpForm, EditProfileForm
 
@@ -26,6 +27,10 @@ def get_person_coordinates_from_location(request):
 def render_website(request):
     return render(request, '/index.html')
 
+@api_view(['GET'])
+def travel_status(request):
+    travel_status_response = get_travel_status()
+    return Response(travel_status_response)
 
 def signup(request):
 
