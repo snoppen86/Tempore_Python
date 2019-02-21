@@ -29,4 +29,9 @@ def _travel_response_handler(data):
     person_schedule = data[str(tday.isoweekday())]
     commute_travel_plan = get_trip_from_coordinates(location, person_schedule)
     return {'TravelPlan': commute_travel_plan}
-#
+
+
+def _school_break_handler(data):
+    weekNumber=datetime.date.isocalendar()[1]
+    weekBreak=[1, 9, 16, 44,]
+
