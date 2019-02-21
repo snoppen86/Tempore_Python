@@ -8,14 +8,15 @@
 <div class="masthead">
 
     <div class="d-flex p-2">
-    <h1>Profile</h1>
+
         <div class="row pt-3">
            <!--Profile info-->
             <div class="col">
-                <p class="text-white">Username: {{ user }}</p>
-                <p class="text-white">First name: {{ user.first_name }}</p>
-                <p class="text-white">Last name: {{ user.last_name }}</p>
-                <p class="text-white">Email: {{ user.email }}</p>
+                <!--<p class="text-white">Username: {{ user }}</p>-->
+                <!--<p class="text-white">First name: {{ user.first_name }}</p>-->
+                <!--<p class="text-white">Last name: {{ user.last_name }}</p>-->
+                <!--<p class="text-white">Email: {{ user.email }}</p>-->
+                <h1>Profile</h1>
                 <a href="{% url 'edit_profile'%}" class="btn btn-success js-scroll-trigger">Edit Profile</a>
             </div>
             <!--Travel Form-->
@@ -97,19 +98,19 @@
                 console.log(result);
                 var travelStatusResponse = result.ResponseData.TrafficTypes;
                 var InfoList= '<li class="list-group-item list-group-item-success" id="infolist0"></li>';
-                var EventGood = '<span class="badge badge-success" id="EventGood0"></span>';
-                var EventBad = '<span class="badge badge-danger" id="EventBad0"></span>';
+                var Event = '<span class="badge badge-success" id="Event"></span>';
                 for (var i = 0; i < travelStatusResponse.length; i++) {
                     var InfoListChanger = InfoList.replace('infolist0', 'infolist'+i);
-                    var EventGoodChanger = EventGood.replace('EventGood0', 'EventGood'+i);
-                    var EventBadChanger = EventGood.replace('EventBad0', 'EventBad'+i);
+                    var EventChanger = Event.replace('Event', 'Event'+i);
                     y=i+10;
-                    if(travelStatusResponse[i].Events.length){
-                        $("#"+y).html(travelStatusResponse[i].Name+EventGoodChanger);
-                        $("#EventGood"+i).html(travelStatusResponse[i].Events[0].Message);
+                    //$("#"+y).html(travelStatusResponse[i].Name+EventChanger);
+                    if(travelStatusResponse[i].Events.length <= 1){
+                        $("#"+y).html(travelStatusResponse[i].Name+EventChanger);
+                        $("#Event"+i).html(travelStatusResponse[i].Events[0].Message);
                     }else{
-                        $("#"+y).html(travelStatusResponse[i].Name+EventBadChanger);
-                        $("#EventBad"+i).html(travelStatusResponse[i].Events[0].Message+travelStatusResponse[i].Events[0].TrafficLine);
+                        var EventChangerDanger = EventChanger.replace('success', 'danger');
+                        $("#"+y).html(travelStatusResponse[i].Name+EventChangerDanger);
+                        $("#Event"+i).text("Störning i trafiken. Kolla på Sl.se");
                     }
 
                 }

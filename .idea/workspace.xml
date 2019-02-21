@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="318a1f16-8729-483a-9b28-b17935f604cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Tempore_Python.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemporeApp/services/Slrequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/services/Slrequest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemporeApp/services/database_inserter.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/services/database_inserter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemporeApp/services/response_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/services/response_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TemporeApp/templates/registration/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/templates/registration/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TemporeApp/services/Slrequest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+            <state relative-caret-position="629">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -28,11 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TemporeApp/services/response_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -40,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TemporeApp/services/database_inserter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
+            <state relative-caret-position="765">
               <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -52,11 +48,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TemporeApp/services/location.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="82" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="82" />
+            <state relative-caret-position="374">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TemporeApp/templates/registration/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="109" column="66" lean-forward="true" selection-start-line="109" selection-start-column="66" selection-end-line="109" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -102,14 +107,14 @@
         <option value="$PROJECT_DIR$/TemporeApp/urls.py" />
         <option value="$PROJECT_DIR$/TemporeApp/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/Tempore/settings.py" />
-        <option value="$PROJECT_DIR$/TemporeApp/templates/registration/profile.html" />
         <option value="$PROJECT_DIR$/TemporeApp/services/response_service.py" />
         <option value="$PROJECT_DIR$/TemporeApp/services/database_inserter.py" />
         <option value="$PROJECT_DIR$/TemporeApp/services/Slrequest.py" />
+        <option value="$PROJECT_DIR$/TemporeApp/templates/registration/profile.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="387" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
@@ -143,7 +148,14 @@
               <item name="Tempore_Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tempore_Python" type="462c0819:PsiDirectoryNode" />
               <item name="TemporeApp" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tempore_Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tempore_Python" type="462c0819:PsiDirectoryNode" />
+              <item name="TemporeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -234,9 +246,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1227608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -247,7 +260,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.3290461" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.5937829" visible="true" weight="0.43086818" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.5937829" visible="true" weight="0.24702059" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.40621707" side_tool="true" weight="0.3279743" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49894625" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -321,15 +334,10 @@
     <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/urls.py" />
     <entry file="file://$PROJECT_DIR$/Tempore/Tempore/urls.py" />
     <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/templates/registration/login.html" />
     <entry file="file://$PROJECT_DIR$/../.virtualenvs/Tempore-sZw92yqn/Lib/site-packages/django/http/request.py" />
     <entry file="file://$PROJECT_DIR$/../.virtualenvs/Tempore-sZw92yqn/Lib/site-packages/pymongo/collection.py" />
-    <entry file="file://$PROJECT_DIR$/Tempore/Tempore/settings.py" />
-    <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/views.py" />
     <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/services/response_service.py" />
     <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/services/Slrequest.py" />
-    <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/templates/registration/profile.html" />
-    <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/services/database_inserter.py" />
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -405,13 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/templates/registration/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="99" column="92" selection-start-line="99" selection-start-column="92" selection-end-line="99" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TemporeApp/services/travelStatus.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -419,23 +420,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/services/database_inserter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/services/mongoService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Tempore/Tempore/settings.py" />
+    <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/templates/registration/login.html" />
     <entry file="file://$PROJECT_DIR$/TemporeApp/services/schdule.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -445,30 +431,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/views.py" />
+    <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/services/database_inserter.py" />
+    <entry file="file://$PROJECT_DIR$/Tempore/TemporeApp/templates/registration/profile.html" />
+    <entry file="file://$PROJECT_DIR$/TemporeApp/services/Slrequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/services/response_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/services/database_inserter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TemporeApp/services/location.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="82" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="82" />
+        <state relative-caret-position="374">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/services/response_service.py">
+    <entry file="file://$PROJECT_DIR$/TemporeApp/templates/registration/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/services/Slrequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        <state relative-caret-position="374">
+          <caret line="109" column="66" lean-forward="true" selection-start-line="109" selection-start-column="66" selection-end-line="109" selection-end-column="66" />
         </state>
       </provider>
     </entry>
