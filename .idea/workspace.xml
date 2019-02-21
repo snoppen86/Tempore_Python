@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="318a1f16-8729-483a-9b28-b17935f604cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemporeApp/services/Slrequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/services/Slrequest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemporeApp/services/database_inserter.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/services/database_inserter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemporeApp/services/response_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/services/response_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TemporeApp/templates/registration/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/TemporeApp/templates/registration/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TemporeApp/services/Slrequest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+            <state relative-caret-position="137">
+              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -28,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TemporeApp/services/response_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="289">
               <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
@@ -40,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TemporeApp/services/database_inserter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
+            <state relative-caret-position="765">
               <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -52,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TemporeApp/services/location.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="255">
               <caret line="16" column="82" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="82" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -109,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="387" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
@@ -122,33 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Tempore_Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tempore_Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tempore_Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tempore_Python" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tempore_Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tempore_Python" type="462c0819:PsiDirectoryNode" />
-              <item name="TemporeApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tempore_Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tempore_Python" type="462c0819:PsiDirectoryNode" />
-              <item name="TemporeApp" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -182,6 +152,33 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="TemporeApp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Tempore_Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tempore_Python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tempore_Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tempore_Python" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tempore_Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tempore_Python" type="462c0819:PsiDirectoryNode" />
+              <item name="TemporeApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tempore_Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tempore_Python" type="462c0819:PsiDirectoryNode" />
+              <item name="TemporeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -234,7 +231,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1227608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -419,16 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/services/database_inserter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TemporeApp/services/mongoService.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -445,19 +433,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/services/location.py">
+    <entry file="file://$PROJECT_DIR$/TemporeApp/services/Slrequest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="82" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="137">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TemporeApp/services/response_service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="289">
           <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -465,10 +450,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TemporeApp/services/Slrequest.py">
+    <entry file="file://$PROJECT_DIR$/TemporeApp/services/database_inserter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        <state relative-caret-position="765">
+          <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemporeApp/services/location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="82" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -6,16 +6,10 @@
 
 {%block body%}
 <div class="masthead">
-
     <div class="d-flex p-2">
-    <h1>Profile</h1>
-        <div class="row pt-3">
            <!--Profile info-->
             <div class="col">
-                <p class="text-white">Username: {{ user }}</p>
-                <p class="text-white">First name: {{ user.first_name }}</p>
-                <p class="text-white">Last name: {{ user.last_name }}</p>
-                <p class="text-white">Email: {{ user.email }}</p>
+                <h1>Trip</h1>
                 <a href="{% url 'edit_profile'%}" class="btn btn-success js-scroll-trigger">Edit Profile</a>
             </div>
             <!--Travel Form-->
@@ -30,6 +24,7 @@
                             <label for="Address">Adress och ort :</label>
                             <input id="Address" type="text" name="address" class="form-control"><br>
                             <h3 class="text-white">The time you start in the morning</h3>
+                            <div class="col">
                             <label for="id1">Mon:</label>
                             <input id="id1" type="time" name="1" class="form-control"><br>
                             <label for="id2">Tue:</label>
@@ -40,6 +35,7 @@
                             <input id="id4" type="time" name="4" class="form-control"><br>
                             <label for="id5">Fri:</label>
                             <input id="id5" type="time" name="5" class="form-control"><br>
+                        </div>
                         </div>
                     </div>
                     <input id="submit" type="button" name="submit" value="submit" class="btn btn-success js-scroll-trigger">
@@ -104,12 +100,12 @@
                     var EventGoodChanger = EventGood.replace('EventGood0', 'EventGood'+i);
                     var EventBadChanger = EventGood.replace('EventBad0', 'EventBad'+i);
                     y=i+10;
-                    if(travelStatusResponse[i].Events.length){
+                    if(travelStatusResponse[i].Events.length <= 1){
                         $("#"+y).html(travelStatusResponse[i].Name+EventGoodChanger);
                         $("#EventGood"+i).html(travelStatusResponse[i].Events[0].Message);
                     }else{
-                        $("#"+y).html(travelStatusResponse[i].Name+EventBadChanger);
-                        $("#EventBad"+i).html(travelStatusResponse[i].Events[0].Message+travelStatusResponse[i].Events[0].TrafficLine);
+                        $("#"+y).html(travelStatusResponse[i].Name+EventBad);
+                        $("#EventBad"+i).text('Störning i Trafiken kolla på Sl.se ');
                     }
 
                 }
