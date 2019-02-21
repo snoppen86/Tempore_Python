@@ -18,6 +18,4 @@ def get_coordinates_for_location(location: str):
 
 
 def _get_location_from_response(data):
-    log.info(data)
-    log.info(data['Response']['View'][0]['Result'][0]['Location'])
     return data['Response']['View'][0]['Result'][0]['Location']

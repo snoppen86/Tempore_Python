@@ -10,6 +10,7 @@ db = pymongo.MongoClient(settings.MONGODB_URL, connect=True)
 accounts = db['Accounts']
 user_col = accounts['users']
 tday = datetime.date.today()
+realtime = datetime.datetime.now()
 
 
 def dose_user_exist_in_db(person):
@@ -48,6 +49,11 @@ def getting_user_info_by_email(data):
     log.info(user_col.find_one({'email': data['email'].lower()}))
     person_info = user_col.find_one({'email': data['email'].lower()})
     location = get_coordinates_for_location(person_info['address'])
+    #Getting person data for the next day after 18:00
+    if int(realtime.strftime('%H')) >= 18:
+        commute_travel_plan = get_trip_from_coordinates(location, person_info[str(tday.isoweekday()+1)])
+        return commute_travel_plan
+    #Getting today's travel plan for the client
     commute_travel_plan = get_trip_from_coordinates(location, person_info[str(tday.isoweekday())])
     return commute_travel_plan
 
