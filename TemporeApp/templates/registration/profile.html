@@ -133,6 +133,7 @@
                         }
                 },
                 success: function(result){
+                    console.log(result)
                     var responseParse = result.TravelPlan.legs;
                     var infoBox= '<li class="list-group-item list-group-item-success" id="infotext0"></li>'
                     var timestamp = '<span class="badge badge-primary" id="t0"></span>';
@@ -145,11 +146,7 @@
                          $('#'+i).html("från " +result.TravelPlan.legs[i].origin.name+ timeChanger + transportChanger + infoChanger);
                          $('#infotext'+i).html("till " +responseParse[i].destination.name+ timeChanger + transportChanger);
                          $('#t'+i).text(result.TravelPlan.legs[i].origin.time);
-                         if (responseParse[i].type == "JNY"){
-                            $('#transport'+i).text(result.TravelPlan.legs[i].origin.TransportName+' mot '+responseParse[i].direction);
-                        }else{
-                            $('#transport'+i).text('måste du gå');
-                        }
+                         $('#transport'+i).text(result.TravelPlan.legs[i].origin.TransportName);
                     }
                 },
                 error: function(xhr, resp, text){
@@ -159,6 +156,19 @@
             })
         });
     });
+    $(window).on('load', function(){
+           $.ajax({
+                url:'/status/',
+                type:"GET",
+                dataType:"json",
+                success: function(result){
+                    console.log(result);
+                },
+                error:function(xhr, resp, text){
+                    console.log(xhr, resp, text);
+                }
+           });
+       });
 
 </script>
 {% endblock%}

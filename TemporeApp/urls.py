@@ -13,5 +13,6 @@ urlpatterns = [
     path('profile/', views.view_profile, name='view_profile'),
     path('profile/edit/', views.edit_profile, name='edit_profile'),
     path('profile/change_password/', views.change_password, name='change_password'),
-    path('', TemplateView.as_view(template_name='index.html'), name='home')
+    path('', TemplateView.as_view(template_name='index.html'), name='home'),
+    # path('status/', views.get_travel_status()),
 ]
