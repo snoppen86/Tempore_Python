@@ -23,7 +23,7 @@ def dose_user_exist_in_db(person):
 
 def upsert_user_info(data):
     if dose_user_exist_in_db(data) is True:
-        user_col.update_one({'email': data['email']}, {"$set":  {'email': data['email']}}, upsert=True,)
+        user_col.update_one({'email': data['email']}, {"$set":  {'email': data['email']}}, upsert=True)
 
 # str(tday.isoweekday())
 def add_user_if_it_dosent_exist_in_db(data):
